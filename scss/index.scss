@@ -1,0 +1,208 @@
+//Imports
+
+
+@import "nav";
+
+@import "h";
+
+@import "column";
+
+@import "menusec";
+
+@import "social";
+
+
+//Body
+body {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: radial-gradient(rgb(29, 161, 117), lemonchiffon, white)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+//Header
+#social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#banner {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+}
+
+.logo:hover {
+    transform: translate(5px, 5px);
+}
+
+#header {
+    grid-area: header;
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 300px;
+}
+
+header {
+    grid-area: header;
+}
+
+
+//Main
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav productos producto"
+        "nav servicios publicidad"
+        "nav footer footer";
+    grid-template-columns: 1% auto 1%;
+    grid-template-rows: 100px 1fr 1fr 150px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 130vh;
+}
+
+button {
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    background-color: lemonchiffon;
+
+}
+
+input {
+    background-color: lemonchiffon;
+    box-shadow: 0 0 0.5rem black;
+    margin-top: 10px;
+}
+
+section#productos {
+    grid-area: productos;
+
+}
+
+section#servicios {
+    grid-area: servicios;
+
+
+}
+
+video {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+button {
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+aside {
+    grid-area: publicidad;
+}
+
+.paraTransicion:hover {
+    transition: 3s;
+    font-size: 2rem;
+}
+
+main {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+//Footer
+footer {
+    grid-area: footer;
+}
+
+label {
+    color: black;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: unset;
+    text-align: left;
+}
+
+#footer {
+    margin-top: 555px;
+}
+
+form {
+    border: solid black 1px;
+    color: black;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+    background-color: lemonchiffon;
+    box-shadow: 0 0 0.5rem black;
+}
+
+
+//General
+nav {
+    grid-area: initial;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-family: cursive;
+}
+
+br {
+    height: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+@media only screen and (max-width: 768px) {
+
+    #social {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #social {
+        justify-content: center;
+
+    }
+}

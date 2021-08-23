@@ -1,0 +1,45 @@
+.nav__principal--1 {
+
+
+    >li {
+        padding: 4% 1px 8px 10px;
+        display: inline-block;
+    }
+
+    li a {
+        background-color: #1da175;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+        display: block;
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    li a:hover {
+        background-color: #434343;
+    }
+
+    li ul {
+        display:none;
+        position:absolute;
+        min-width: 140px;
+    }
+
+    li:hover>ul {
+        display: block;
+    }
+
+    li ul li {
+        z-index: 1000;
+        position: relative;
+
+    }
+
+    li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
+}
